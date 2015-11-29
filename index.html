@@ -7,7 +7,7 @@
     <meta name="description" content="A landing page for Aran Khanna">
     <meta name="author" content="Aran Khanna">
 
-    <!-- Le styles -->
+    <!-- styles -->
     <link href="bootstrap.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
   	
@@ -21,12 +21,12 @@
     </style>
     <link href="bootstrap-responsive.css" rel="stylesheet">
 
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-	<!-- Le favicon -->
+	<!-- favicon -->
     <link rel="shortcut icon" href="favicon.ico">
 
     <!-- JQuery -->
@@ -35,6 +35,15 @@
     <script type="text/javascript" src="jquery.scrollTo-1.4.2-min.js"></script>
     <!-- Load LocalScroll -->
 	<script type="text/javascript" src="jquery.localscroll-1.2.7-min.js"></script>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-47444452-1', 'arankhanna.com');
+	  ga('send', 'pageview');
+	</script>
 	</head>
 	<body>
 
@@ -56,15 +65,15 @@
 				            <h1 class="brand"><a href="#top">Aran Khanna</a></h1>
 				            <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
 				            <nav class="pull-right nav-collapse collapse"><ul id="menu-main" class="nav">
-				             	<li><a title="portfolio" href="#portfolio">my resume</a></li>
-								<li><a title="services" href="#services">my projects</a></li>
-								<li><a title="news" href="#news">news</a></li>
-								<li><a title="team" href="#team">about me</a></li>
+								<li><a title="services" href="#feature">my work</a></li>
+								<li><a title="portfolio" href="#testimonials">my resume</a></li>
+								<!-- <li><a title="news" href="#news">my other projects</a></li> -->
+						<!-- 		<li><a title="team" href="#team">about me</a></li> -->
 								<li><a title="contact" href="#contact">contact me</a></li>
 								<li><a href="http://www.linkedin.com/pub/aran-khanna/55/380/3b3"><img src="linkedin.png" width="30" height="30"></a></li>
 								<li><a href="http://github.com/arank"><img src="githubbutton.png" width="30" height="30"></a></li>
 								<li><a href="http://twitter.com/AK00"><img src="twitter.png" width="30" height="30"></a></li>
-								<li><a href="mailto:arankhanna25@gmail.com"><img src="email.jpg" width="30" height="30"></a></li>
+								<li><a href="mailto:arankhanna@college.harvard.edu"><img src="email.jpg" width="30" height="30"></a></li>
 								</ul>
 							</nav>
       			</div> <!-- /.container -->
@@ -77,19 +86,23 @@
 <!-- Carousel
 ================================================== -->
 <div id="banner" class="hidden-phone">
-    <img src="background2.png" alt="">
+    <img src="background2.jpg" alt="My landing page photo" width="100%">
 
     <div class="banner-caption">
-      <h2 id="intro-caption">Hello My Name is Aran.</h2>
+    	<span id="intro-caption">Hello I'm Aran</span>
+    	<p>
+    		I am a student studying computer science and statistics at Harvard College. Take a look at <a title="services" href="#feature">my work</a> to find out a bit more about what I do, or read my <a title="portfolio" href="#testimonials">resume</a>.
+    	</p>
     </div><!-- .banner-caption -->
        
 </div><!-- /#banner -->
 
 <!-- Feature 
 ================================================== -->
-<div class="scrollblock">
+
+<div class="scrollblock hidden-phone">
     <section id="feature">
-		<div class="visible-phone">
+<!-- 		<div class="visible-phone">
 			<br><br>
 			<table style="width: 100%;">
 				<tr>
@@ -115,235 +128,160 @@
 						<p>I am a programmer.</p>
 						<p>I am currently concentrating in computer science at Harvard College.</p>
 					</article>
-				</div><!-- ./span12 -->
-			</div><!-- .row -->
-		</div><!-- ./container -->
+				</div>
+			</div>
+		</div> -->
+		<div class="google-maps">
+		<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script><div style="overflow:hidden;height:447px;width:1950px;"><div id="gmap_canvas" style="height:447px;width:1950px;"></div><a href="http://www.embed-google-map.com">google maps generator</a></div><script type="text/javascript"> function init_map(){var myOptions = {zoom:14, scrollwheel: false,navigationControl: false,mapTypeControl: false,scaleControl: false,draggable: false,center:new google.maps.LatLng(42.3824012,-71.1250134),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(42.3824012, -71.1250134)});infowindow = new google.maps.InfoWindow({content:'<div style="position:relative;line-height:1.34;overflow:hidden;white-space:nowrap;display:block;"><div style="margin-bottom:2px;font-weight:500;">Aran\'s Current Location</div><span>Pforzheimer House <br>  Cambridge</span></div>' });google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+		</div>
 	</section>
-</div><!-- /.scrollblock -->
+</div> 
+
+<!-- Projects Section
+ ================================================== -->
+
+<section id="services" class="single-page scrollblock">
+<div class="container hidden-phone">
+	<h1><span>My Projects.</span></h1>
+		<div class="no-touch gallery">
+			<div class="wrap">
+				<!-- Define all of the tiles: -->
+				<div class="box">
+				  <div class="boxInner">
+					<a href="http://arankhanna.com/flights.html">
+						<img src="http://www.travelbrochures.org/wp-content/uploads/2014/01/sky-altitude-flight-planes-iphone-ipad_582993.jpg" />
+					</a>
+					<div class="titleBox">Cheap Flight Tracker</div>
+				  </div>
+				</div>
+				<div class="box">
+				  <div class="boxInner">
+					<a href="http://github.com/arank/whisper">
+						<img src="http://ak8.picdn.net/shutterstock/videos/956242/preview/stock-footage-bar-code-numbers-sound-included.jpg" />
+					</a>
+					<div class="titleBox">Sonic Bar Code Website and App</div>
+				  </div>
+				</div>
+				<div class="box">
+				  <div class="boxInner">
+				  	<a href="http://github.com/arank/dorm-automation-script">
+						<img src="http://cdn.freshome.com/wp-content/uploads/2013/01/home-automation.jpg" />
+					</a>
+					<div class="titleBox">Dorm Automation Script</div>
+				  </div>
+				</div>
+				<div class="box">
+				  <div class="boxInner">
+				  	<a href="https://docs.google.com/spreadsheet/ccc?key=0AvPBKpp13kg3dHlfc3l4dEJkc0NEd3lobjYySWN0WXc&usp=sharing&newcopy=true">
+						<img src="http://ksr.wpengine.netdna-cdn.com/wp-content/uploads/2014/01/1727060-electronic-stock-numbers-with-graph.jpg" />
+					</a>
+					<div class="titleBox">Stock Tracking Google Spreadsheet Script</div>
+				  </div>
+				</div>
+				<div class="box">
+				  <div class="boxInner">
+				  	<a href="https://docs.google.com/spreadsheet/ccc?key=0AvPBKpp13kg3dGcwOVlTNl9mVi1ZNjViY01zTDg1QXc&usp=sharing&newcopy=true">
+						<img src="http://cdn-4.lifehack.org/wp-content/files/2007/11/20071126-todo-list.png" />
+					</a>
+					<div class="titleBox">Recurring Google Tasks Script</div>
+				  </div>
+				</div>
+			</div><!-- /#wrap -->
+			<!-- Add some JavaScript to enable toggling the descriptions when an image is tapped on a touchscreen device -->
+			<script type="text/javascript">
+				$(function(){
+				  // See if this is a touch device
+				  if ('ontouchstart' in window)
+				  {
+					// Set the correct body class
+					$('body').removeClass('no-touch').addClass('touch');
+					
+					// Add the touch toggle to show text
+					$('div.boxInner img').click(function(){
+					  $(this).closest('.boxInner').toggleClass('touchFocus');
+					});
+				  }
+				});
+			</script>
+		</div><!-- /#gallery -->
+	</div>
+</section><!-- /#services -->
+
+
+<!-- Quote Section
+ ================================================== -->
+<div class="scrollorama">
+    <section id="testimonials" class="single-page hidden-phone">
+        <div class="container">
+            <div class="row">
+              	<div class="blockquote-wrapper">
+                    <blockquote class="mega">
+                        <div class="span4"><p class="cite">Peter Drucker:</p></div>
+                        <div class="span8"><p class="alignright">"The best way to predict the future is to create it."</p></div>
+                     </blockquote>
+				</div>
+            </div>
+        </div>
+    </section>
+</div>
 
 <!-- Portfolio Section
  ================================================== -->
 
 <section id="portfolio" class="single-page scrollblock">
 	<div class="container">
-		<h1 id="folio-headline">Resume and CV.</h1>
-		<div class="personal-links-table">
-		   <div class="personal-link-row">
-			   <a href="techresume.pdf" class="btn btn-large">Resume</a>
-		   </div>
-		   <div class="personal-link-row">
-			   <a href="cv.pdf" class="btn btn-large">CV</a>
-		   </div>
+		<h1 id="folio-headline">Résumé</h1>
+		<!-- if not on phone -->
+		<table style="width: 100%;" class="hidden-phone">
+		  <tr>
+			 <td style="text-align: center; vertical-align: middle;">
+				  <a href="resume.pdf" class="btn btn-large">Download My Résumé</a>
+			 </td>
+		  </tr>
+		</table>
+		<!-- if on phone -->
+		<div class="visible-phone">
+			<a href="resume.pdf" class="btn btn-large">Download My Résumé</a>
 		</div>
 	</div><!-- /.container -->
 </section><!-- /#portfolio -->
 
 
-<!-- Testimonials Section
- ================================================== -->
-<div class="scrollorama">
-    <section id="testimonials" class="single-page hidden-phone">
-        <div class="container">
-              <div class="row">
-              	<div class="blockquote-wrapper">
-                    <blockquote class="mega">
-                        <div class="span4"><p class="cite">Barack Obama:</p></div>
-                        <div class="span8"><p class="alignright">"I highly recommend Aran. He is the coolest person I know."</p></div>
-                     </blockquote>
-				</div><!-- /.blockquote-wrapper -->
-              </div><!-- /.row -->
-        </div><!-- /.container -->
-    </section><!-- /#testimonials -->
-</div><!-- /.scrollorama -->
-
-<!-- Services Section
- ================================================== -->
-
-<section id="services" class="single-page scrollblock">
-	<div class="container">
-		<h1><span>Projects.</span></h1>
-	      <!-- Four columns -->
-	      <div class="row">
-	        <div class="span3">
-	        	<div class="align">
-	        		<img src="assets/img/service01.png" alt="">
-	        	</div>
-	            <h2>Web design</h2>
-	            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-	        </div><!-- /.span3 -->
-
-	        <div class="span3">
-	        	<div class="align">
-	        		<img src="assets/img/service02.png" alt="">
-	        	</div>
-	            <h2>Branding</h2>
-	            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-	        </div><!-- /.span3 -->
-
-	        <div class="span3">
-	        	<div class="align">
-	        		<img src="assets/img/service03.png" alt="">
-	        	</div>
-	            <h2>Print design</h2>
-	            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-	        </div><!-- /.span3 -->
-
-	        <div class="span3">
-	        	<div class="align">
-	        		<img src="assets/img/service04.png" alt="">
-	        	</div>
-	            <h2>Marketing</h2>
-	            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-	        </div><!-- /.span3 -->
-
-
-	      </div><!-- /.row -->
-	</div><!-- /.container -->
-</section><!-- /#services -->
-
-<!-- News Section
- ================================================== -->
-
-<section id="news" class="single-page scrollblock">
-	<div class="container">
-		<h1><span>Our Blog.</span></h1>
-	      <!-- Three columns -->
-	      
-	      <div class="row">
-			<article class="span4 post">
-				<img class="img-news" src="assets/img/post01.jpg" alt="">
-				<div class="inside">
-			    	<p class="post-date">March 17, 2013</p>
-					<h2>The New MacBook Pro is Here</h2>
-					<div class="entry-content"> 
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. &hellip;</p>
-						<a href="#" class="more-link">read more</a>
-					</div>
-				</div><!-- /.inside -->
-			</article><!-- /.span4 --> 
-			<article class="span4 post">
-				<img class="img-news" src="assets/img/post02.jpg" alt="">
-				<div class="inside">
-			    	<p class="post-date">February 28, 2013</p>
-					<h2>Download The Latests Apps</h2>
-					<div class="entry-content"> 
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. &hellip;</p>
-						<a href="#" class="more-link">read more</a>
-					</div>
-				</div><!-- /.inside -->
-			</article><!-- /.span4 --> 
-			<article class="span4 post">
-				<img class="img-news" src="assets/img/post03.jpg" alt="">
-				<div class="inside">
-			    	<p class="post-date">February 06, 2013</p>
-					<h2>Test Your Web Design</h2>
-					<div class="entry-content"> 
-						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. &hellip;</p>
-						<a href="#" class="more-link">read more</a>
-					</div>
-				</div><!-- /.inside -->
-			</article><!-- /.span4 --> 
-			     
-		</div><!-- /.row -->
-	    <a href="#" class="btn btn-large">Go to our blog</a>
-	</div><!-- /.container -->
-</section><!-- /#news -->
-
-
-<!-- Team Section
- ================================================== -->
-
-<section id="team" class="single-page scrollblock">
-	<div class="container">	
-		<h1>About Me</h1>
-		
-	    <!-- Five columns -->
-	    <div class="row">
-	    	<div class="span2 offset1">
-	    		<div class="teamalign">
-	    			<img class="team-thumb img-circle" src="assets/img/team01.jpg" alt="">
-	    		</div>
-	    		<h3>aran</h3>
-	    		<div class="job-position">web designer</div>
-	    	</div><!-- ./span2 -->
-	    	<div class="span2">
-	    		<div class="teamalign">
-	    			<img class="team-thumb img-circle" src="assets/img/team02.jpg" alt="">
-	    		</div>
-	    		<h3>aran</h3>
-	    		<div class="job-position">systems developer</div>
-	    	</div><!-- ./span2 -->
-	    	<div class="span2">
-	    		<div class="teamalign">
-	    			<img class="team-thumb img-circle" src="assets/img/team03.jpg" alt="">
-	    		</div>
-	    		<h3>aran</h3>
-	    		<div class="job-position">graphic designer</div>
-	    	</div><!-- ./span2 -->
-	    	<div class="span2">
-	    		<div class="teamalign">
-	    			<img class="team-thumb img-circle" src="assets/img/team04.jpg" alt="">
-	    		</div>
-	    		<h3>aran</h3>
-	    		<div class="job-position">project manager</div>
-	    	</div><!-- ./span2 -->
-	    	<div class="span2">
-	    		<div class="teamalign">
-	    			<img class="team-thumb img-circle" src="assets/img/team05.jpg" alt="">
-	    		</div>
-	    		<h3>aran</h3>
-	    		<div class="job-position">real owner</div>
-	    	</div><!-- ./span2 -->
-	    </div><!-- /.row -->
-	    <div class="row">
-	    	<div class="span10 offset1">
-	    		<hr class="featurette-divider">
-				<div class="featurette">
-        			<h2 class="featurette-heading">Want to know more? <span class="muted">| a little about me</span></h2>
-					<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
-					<p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. </p>
-      				<p>Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-      			</div><!-- /.featurette -->	
-      			<hr class="featurette-divider">
-	    	</div><!-- .span10 -->
-	    </div><!-- /.row -->	    
-	</div><!-- /.container -->
-</section><!-- /#team -->
 
 <!-- Contact Section
  ================================================== -->
-
+<!-- TODO MAKE THIS ASYNC -->
 <section id="contact" class="single-page scrollblock">	
 	<div class="container">	
 		<h1>Send me a message!</h1>
 		<div class="row">
 			<div class="span12">
-				<div class="cform" id="theme-form"><form action="#" method="post" class="cform-form">
+				<div class="cform" id="theme-form"><form action="/contactform.php" method="post" class="cform-form">
 					<div class="row">
 						<div class="span6">
-							<span class="your-name"><input type="text" name="your-name" value="your name" class="cform-text" size="40" title="your name"></span>
+							<span class="your-name"><input type="text" name="your-name" id="your-name" value="your name" class="cform-text" size="40" title="your name"></span>
 						</div>
 						<div class="span6">
-							<span class="your-email"><input type="text" name="your-email" value="your email" class="cform-text" size="40" title="your email"></span>
+							<span class="your-email"><input type="text" name="your-email" id="your-email" value="your email" class="cform-text" size="40" title="your email"></span>
 						</div>
 					</div>
 					<div class="row">
 						<div class="span12">
-							<span class="subject"><input type="text" name="subject" value="subject" class="cform-text" size="140" title="subject"></span>
+							<span class="subject"><input type="text" name="subject" id="subject" value="subject" class="cform-text" size="140" title="subject"></span>
 						</div>
 					</div>
 					<div class="row">
 						<div class="span12">
-							<span class="message"><textarea name="message" class="cform-textarea" cols="40" rows="10" title="drop us a line."></textarea></span>
+							<span class="message"><textarea name="message" id="message" class="cform-textarea" cols="40" rows="10" title="drop us a line."></textarea></span>
 						</div>
 					</div>
-					<div><input type="submit" value="Send message" class="cform-submit pull-left"></div>
+					<div><input type="submit" id="submit-contact" value="Send message" class="cform-submit"></div>
 					<div class="cform-response-output"></div>
 				</form></div>						
-			</div><!-- ./span12 -->
-		</div><!-- /.row -->
-	</div><!-- /.container -->
-	</section><!-- /#contact -->
+			</div>
+		</div>
+	</div>
+</section>
 
 <div class="footer-wrapper">
 	<div class="container">	
@@ -352,7 +290,8 @@
 		</footer>
 	</div><!-- ./container -->
 </div>
-    <!-- Le javascript
+
+    <!--javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script type="text/javascript" src="bootstrap.js"></script>
